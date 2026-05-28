@@ -7,107 +7,107 @@ var H5P = H5P || {};
  * other libraries
  * @module
  */
-H5P.JoubelUI = (function ($) {
+H5P.JoubelUICFRD = (function ($) {
 
   /**
    * The internal object to return
-   * @class H5P.JoubelUI
+   * @class H5P.JoubelUICFRD
    * @static
    */
-  function JoubelUI() {}
+  function JoubelUICFRD() {}
 
   /* Public static functions */
 
   /**
    * Create a tip icon
-   * @method H5P.JoubelUI.createTip
+   * @method H5P.JoubelUICFRD.createTip
    * @param  {string}  text   The textual tip
    * @param  {Object}  params Parameters
    * @return {H5P.JoubelTip}
    */
-  JoubelUI.createTip = function (text, params) {
+  JoubelUICFRD.createTip = function (text, params) {
     return new H5P.JoubelTip(text, params);
   };
 
   /**
    * Create message dialog
-   * @method H5P.JoubelUI.createMessageDialog
+   * @method H5P.JoubelUICFRD.createMessageDialog
    * @param  {H5P.jQuery}               $container The dom container
    * @param  {string}                   message    The message
    * @return {H5P.JoubelMessageDialog}
    */
-  JoubelUI.createMessageDialog = function ($container, message) {
+  JoubelUICFRD.createMessageDialog = function ($container, message) {
     return new H5P.JoubelMessageDialog($container, message);
   };
 
   /**
    * Create help text dialog
-   * @method H5P.JoubelUI.createHelpTextDialog
+   * @method H5P.JoubelUICFRD.createHelpTextDialog
    * @param  {string}             header  The textual header
    * @param  {string}             message The textual message
    * @param  {string}             closeButtonTitle The title for the close button
    * @return {H5P.JoubelHelpTextDialog}
    */
-  JoubelUI.createHelpTextDialog = function (header, message, closeButtonTitle) {
+  JoubelUICFRD.createHelpTextDialog = function (header, message, closeButtonTitle) {
     return new H5P.JoubelHelpTextDialog(header, message, closeButtonTitle);
   };
 
   /**
    * Create progress circle
-   * @method H5P.JoubelUI.createProgressCircle
+   * @method H5P.JoubelUICFRD.createProgressCircle
    * @param  {number}             number          The progress (0 to 100)
    * @param  {string}             progressColor   The progress color in hex value
    * @param  {string}             fillColor       The fill color in hex value
    * @param  {string}             backgroundColor The background color in hex value
    * @return {H5P.JoubelProgressCircle}
    */
-  JoubelUI.createProgressCircle = function (number, progressColor, fillColor, backgroundColor) {
+  JoubelUICFRD.createProgressCircle = function (number, progressColor, fillColor, backgroundColor) {
     return new H5P.JoubelProgressCircle(number, progressColor, fillColor, backgroundColor);
   };
 
   /**
    * Create throbber for loading
-   * @method H5P.JoubelUI.createThrobber
+   * @method H5P.JoubelUICFRD.createThrobber
    * @return {H5P.JoubelThrobber}
    */
-  JoubelUI.createThrobber = function () {
+  JoubelUICFRD.createThrobber = function () {
     return new H5P.JoubelThrobber();
   };
 
   /**
    * Create simple rounded button
-   * @method H5P.JoubelUI.createSimpleRoundedButton
+   * @method H5P.JoubelUICFRD.createSimpleRoundedButton
    * @param  {string}                  text The button label
    * @return {H5P.SimpleRoundedButton}
    */
-  JoubelUI.createSimpleRoundedButton = function (text) {
+  JoubelUICFRD.createSimpleRoundedButton = function (text) {
     return new H5P.SimpleRoundedButton(text);
   };
 
   /**
    * Create Slider
-   * @method H5P.JoubelUI.createSlider
+   * @method H5P.JoubelUICFRD.createSlider
    * @param  {Object} [params] Parameters
    * @return {H5P.JoubelSlider}
    */
-  JoubelUI.createSlider = function (params) {
+  JoubelUICFRD.createSlider = function (params) {
     return new H5P.JoubelSlider(params);
   };
 
   /**
    * Create Score Bar
-   * @method H5P.JoubelUI.createScoreBar
+   * @method H5P.JoubelUICFRD.createScoreBar
    * @param  {number=}       maxScore The maximum score
    * @param {string} [label] Makes it easier for readspeakers to identify the scorebar
    * @return {H5P.JoubelScoreBar}
    */
-  JoubelUI.createScoreBar = function (maxScore, label, helpText, scoreExplanationButtonLabel) {
+  JoubelUICFRD.createScoreBar = function (maxScore, label, helpText, scoreExplanationButtonLabel) {
     return new H5P.JoubelScoreBar(maxScore, label, helpText, scoreExplanationButtonLabel);
   };
 
   /**
    * Create Progressbar
-   * @method H5P.JoubelUI.createProgressbar
+   * @method H5P.JoubelUICFRD.createProgressbar
    * @param  {number=}       numSteps The total numer of steps
    * @param {Object} [options] Additional options
    * @param {boolean} [options.disableAria] Disable readspeaker assistance
@@ -116,20 +116,20 @@ H5P.JoubelUI = (function ($) {
    *  e.g. "Slide :num of :total"
    * @return {H5P.JoubelProgressbar}
    */
-  JoubelUI.createProgressbar = function (numSteps, options) {
+  JoubelUICFRD.createProgressbar = function (numSteps, options) {
     return new H5P.JoubelProgressbar(numSteps, options);
   };
 
   /**
    * Create standard Joubel button
    *
-   * @method H5P.JoubelUI.createButton
+   * @method H5P.JoubelUICFRD.createButton
    * @param {object} params
    *  May hold any properties allowed by jQuery. If href is set, an A tag
    *  is used, if not a button tag is used.
    * @return {H5P.jQuery} The jquery element created
    */
-  JoubelUI.createButton = function(params) {
+  JoubelUICFRD.createButton = function(params) {
     var type = 'button';
     if (params.href) {
       type = 'a';
@@ -179,5 +179,5 @@ H5P.JoubelUI = (function ($) {
     };
   }
 
-  return JoubelUI;
+  return JoubelUICFRD;
 })(H5P.jQuery);
