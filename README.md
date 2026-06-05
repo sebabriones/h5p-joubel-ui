@@ -1,25 +1,26 @@
-h5p-joubel-ui
-=============
+# H5P.JoubelUICFRD 1.1
 
-This is a utility library for creating UI widgets. It does not implement attach, so it has to be actively used by
-other libraries
+Capa CFRD sobre **H5P.JoubelUI** 1.3.45 (upstream), con `coreApi` **1.28**.
 
-Version history
-===============
-Version  | Description
----------| -------------
-1.0      | Initial version
-1.1      | Added H5P.JoubelUI.createHelpTextDialog(), H5P.JoubelUI.createProgressCircle(), H5P.JoubelUI.createThrobber(), H5P.JoubelUI.createSimpleRoundedButton() and H5P.JoubelUI.createButton()
-1.2      | Added H5P.JoubelUI.createScoreBar(), H5P.JoubelUI.createSlider() and H5P.JoubelUI.createProgressbar()
+## Identidad H5P
 
-License
-=======
-(The MIT License)
+| Campo | Valor |
+|-------|-------|
+| `machineName` | `H5P.JoubelUICFRD` |
+| Versión | 1.1.0 |
+| Entrada JS | `js/joubel-ui-cfrd.js` → `H5P.JoubelUICFRD` |
+| Tipografía | `css/joubel-cfrd-fonts.css` + `fonts/poppins-v24-latin_latin-ext-regular.woff2` |
 
-Copyright (c) 2015 Joubel AS
+## Sync a Lumi / h5p-cli
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+```bash
+npm run sync:lumi
+```
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+Destino: `nuevas-librerias-h5p/H5P.JoubelUICFRD-1.1/`
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+## Fuente Poppins
+
+Archivo auto-hospedado (subset latin + latin-ext, peso 400) desde [Fontsource](https://fontsource.org/fonts/poppins) / Google Fonts (OFL-1.1). Mismo nombre de archivo que usa `H5P.Instructions` para reutilizar copias entre librerías CFRD.
+
+Documentación del stack: [docs/cfrd-migracion-1.0-a-1.1.md](../../../docs/cfrd-migracion-1.0-a-1.1.md).

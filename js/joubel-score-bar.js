@@ -138,7 +138,7 @@ H5P.JoubelScoreBar = (function ($) {
       });
 
       if (helpText) {
-        H5P.JoubelUI.createTip(helpText, {
+        H5P.JoubelUICFRD.createTip(helpText, {
           tipLabel: scoreExplanationButtonLabel ? scoreExplanationButtonLabel : helpText,
           helpIcon: true
         }).appendTo(self.$scoreBar);
