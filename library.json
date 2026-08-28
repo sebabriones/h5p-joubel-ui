@@ -4,14 +4,14 @@
   "description": "UI utility library",
   "majorVersion": 1,
   "minorVersion": 0,
-  "patchVersion": 1,
+  "patchVersion": 2,
   "runnable": 0,
   "coreApi": {
     "majorVersion": 1,
     "minorVersion": 3
   },
   "machineName": "H5P.JoubelUICFRD",
-  "author": "CFRD",
+  "author": "sbriones (CFRD-UDEC)",
   "preloadedJs": [
     {
       "path": "js/joubel-help-dialog.js"
