@@ -52,7 +52,7 @@
 }
 
 .h5p-joubelui-button:hover,
-.h5p-joubelui-button:focus {
+.h5p-joubelui-button:focus-visible {
   background: #1356a3;
   color: var(--h5p-theme-contrast-cta);
   text-decoration: none;
